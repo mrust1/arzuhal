@@ -1,0 +1,10 @@
+
+%p
+  %strong Text:
+  = comment.body
+%p
+%div{:style => "float:right"}
+  = link_to 'Destroy Tweet', [comment.user, comment],
+    method: :delete,
+    data: { confirm: 'Are you sure?' }
+%br/

@@ -1,0 +1,23 @@
+%hr/
+%div
+  %table
+    %tr
+      %th İMAGE
+      %th
+        = @user.name
+      %th
+        Email : #{@user.email}
+      %th
+        Join Date : #{display_turkish_time(@user.created_at)}
+    %div{:style => "width:600px"}
+      - @users.each do |user|
+        %tr
+          %td{:colspan => "4"}= user.body
+  %h2 Add a Tweet:
+  = render "comments/form"
+  %h2 Add new Tweet this user
+  %hr/
+  = render @user.comments
+  = link_to 'Edit User', edit_user_path(@user)
+
+  {link_to 'Back to Users', users_path}
