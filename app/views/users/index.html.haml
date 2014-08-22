@@ -1,6 +1,10 @@
+= will_paginate @users, renderer: BootstrapPagination::Rails
+
 %h1 Listing users
-= link_to 'New user', new_user_path
-%table
+= link_to 'New user', new_user_path, class: 'btn btn-lg btn-success'
+%br/
+%br/
+%table.table.table-hover.table-responsive
   %tr
     %th Name
     %th Surname
@@ -13,7 +17,8 @@
       %td= user.surname
       %td= user.email
       %td= user.body
-      %td= link_to 'Show', user_path(user)
-      %td= link_to 'Edit', edit_user_path(user)
+      %td= link_to 'Show', user_path(user),class: 'btn btn-sm btn-primary'
+      %td= link_to 'Edit', edit_user_path(user),class: 'btn btn-sm btn-info'
       %td= link_to 'Destroy', user_path(user),
-          method: :delete, data: { confirm: 'Are you sure?' }
+          method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger'
+
