@@ -34,9 +34,10 @@
           %li.active
             %a{:href => root_path} Home
           %li
-            %a{:href => "#"} About
+            =link_to 'ahdtj', destroy_admin_session_path
           %li
             %a{:href => "#"} Contact
         %hr/
+
     .jumbotron
       = yield

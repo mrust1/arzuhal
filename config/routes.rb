@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :users do
       resources :comments
   end
+  resources :admins
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
