@@ -1,0 +1,6 @@
+= form_for([@user, @user.comments .build]) do |f|
+  %p
+    %br/
+    = f.text_area  :body , :size => "70x5"
+  %p
+    = f.submit

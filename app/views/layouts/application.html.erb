@@ -1,24 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Arzuhal</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-      <body style="float: center">
-          <div style="text-align:left;width:600px">
-            <div>
-              <h1 style="text-align: right">ARZUHAL</h1>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Arzuhal</title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+    </head>
+          <body style="float: center">
+              <div style="text-align:left;width:600px">
+                <div>
+                  <h1 style="text-align: right">ARZUHAL</h1>
+                  </div>
+                <HR/>
               </div>
-            <HR/>
-          </div>
-          <div style="text-align:left;width:600px">
-            <div>
-              <%= yield %>
+              <div style="text-align:left;width:600px">
+                <div>
+                  <%= yield %>
+                </div>
             </div>
-        </div>
 
 
-    </body>
-</html>
+        </body>
+    </html>
